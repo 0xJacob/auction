@@ -3,7 +3,6 @@ pragma solidity ^0.8.2;
 
 import "./interfaces/IDusk.sol";
 import "./interfaces/IERC20.sol";
-import "./interfaces/IWBNB.sol";
 
 import "@openzeppelin/contracts-upgradeable/security/PausableUpgradeable.sol";
 import "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol";
@@ -17,7 +16,6 @@ contract Auction is
 {
     using SafeERC20Upgradeable for IERC20Upgradeable;
 
-    address public WBNB;
     IDusk public Dusk;
 
     uint256 public firstEpochBeginAt; // auction begin block number.
